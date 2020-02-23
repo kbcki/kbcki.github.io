@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+.kbcki-two-sided-bg-container__content {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 1; }
+
+.kbcki-two-sided-bg-container__bg-pane {
+  position: fixed;
+  top: 0;
+  width: 50vw;
+  height: 100vw; }
+  .kbcki-two-sided-bg-container__bg-pane--left {
+    left: 0;
+    background: #4A6B5B; }
+  .kbcki-two-sided-bg-container__bg-pane--right {
+    right: 0;
+    background: #FBFBFB; }
+
+.kbcki-content {
+  background: #FBFBFB;
+  min-height: 100vh;
+  display: flex; }
+
+.kbcki-sidebar {
+  background: #4a6a5a;
+  flex: 0 0 320px;
+  color: white;
+  text-align: center; }
+

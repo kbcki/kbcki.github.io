@@ -1,0 +1,27 @@
+.kbcki-two-sided-bg-container {
+
+    &__content {
+        max-width: 1200px;
+        margin: auto;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__bg-pane {
+        position: fixed;
+        top: 0;
+        width: 50vw;
+        height: 100vw;
+
+        &--left {
+            left: 0;
+            background: #4A6B5B;
+        }
+
+        &--right {
+            right: 0;
+            background: #FBFBFB;
+        }
+    }
+
+}
