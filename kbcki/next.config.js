@@ -1,7 +1,9 @@
 const withSass = require('@zeit/next-sass');
 
 module.exports = withSass({
-    sassLoaderOptions: {},
+    sassLoaderOptions: {
+        includePaths: ['src/theme']
+    },
     exportTrailingSlash: true,
     exportPathMap: function () {
         return {
