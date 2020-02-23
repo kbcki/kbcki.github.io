@@ -1,0 +1,20 @@
+@import 'breakpoints';
+
+.kbcki-content {
+    background: #FBFBFB;
+    min-height: 100vh;
+
+    display: flex;
+
+    @include for-desktop {
+        flex-direction: row;
+    }
+
+    @include for-tablet {
+        flex-direction: column;
+    }
+
+    @include for-mobile {
+        flex-direction: column;
+    }
+}
