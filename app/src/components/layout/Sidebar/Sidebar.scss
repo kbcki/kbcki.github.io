@@ -72,13 +72,13 @@
         transform: scaleY(0.2) scaleX(0.8);
         transform-origin: top;
         opacity: 0;
-        touch-action: none;
+        pointer-events: none;
         transition: 200ms ease-in-out;
 
         &--open {
             transform: scale(1);
             opacity: 1;
-            touch-action: auto;
+            pointer-events: all;
         }
     }
 }
