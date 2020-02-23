@@ -1,4 +1,30 @@
 @import 'breakpoints';
+@import 'colors';
+
+@mixin two-columns {
+    &--left {
+        left: 0;
+        background: $color-primary;
+    }
+
+    &--right {
+        right: 0;
+        background: $color-background;
+    }
+}
+
+@mixin one-column {
+    &--left {
+        left: 0;
+        width: 0;
+    }
+
+    &--right {
+        right: 0;
+        width: 100vw;
+        background: $color-background;
+    }
+}
 
 .kbcki-two-sided-bg-container {
 
@@ -16,41 +42,15 @@
         height: 100vh;
 
         @include for-desktop {
-            &--left {
-                left: 0;
-                background: #4A6B5B;
-            }
-        
-            &--right {
-                right: 0;
-                background: #FBFBFB;
-            }
+            @include two-columns;
         }
 
         @include for-tablet {
-            &--left {
-                left: 0;
-                width: 0;
-            }
-
-            &--right {
-                right: 0;
-                width: 100vw;
-                background: #FBFBFB;
-            }
+            @include one-column;
         }
 
         @include for-mobile {
-            &--left {
-                left: 0;
-                width: 0;
-            }
-
-            &--right {
-                right: 0;
-                width: 100vw;
-                background: #FBFBFB;
-            }
+            @include one-column;
         }
 
     }

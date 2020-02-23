@@ -1,20 +1,14 @@
 @import 'breakpoints';
 
 .kbcki-content {
-    background: #FBFBFB;
-    min-height: 100vh;
-
-    display: flex;
-
-    @include for-desktop {
-        flex-direction: row;
-    }
-
-    @include for-tablet {
-        flex-direction: column;
-    }
+    padding: 32px;
+    overflow: auto;
+    max-height: calc(100vh - 32px);
+    box-sizing: border-box;
+    margin: 16px;
 
     @include for-mobile {
-        flex-direction: column;
+        padding-bottom: 100px;
     }
+
 }
