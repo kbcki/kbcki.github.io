@@ -64,7 +64,7 @@
 
     &__nav {
         left: 0;
-        background: #4a6959;
+        background: $color-primary;
         margin: 0px 16px;
         padding: 16px;
         color: white;
@@ -100,6 +100,25 @@
             margin: 0;
             padding: 16px 32px;
         }
+
+        &__pattern {
+            position: absolute;
+            top: 16px;
+            bottom: 16px;
+            background: url('/pattern.png');
+            width: 289px;
+            margin: 0 12px;
+            background-size: 10px 20px;
+        }
+
+        @include for-desktop {
+            &__header {
+                position: relative;
+                top: 74px;
+                background: $color-primary;
+                z-index: 100;
+            }
+        }
     }
 
 
@@ -110,17 +129,17 @@
     @include for-mobile {
         @include collapsible-navigation;
 
-        &__header {
-            margin: 0;
-        }
+        // &__header {
+        //     margin: 0;
+        // }
 
-        &__nav {
-            margin: 0;
-        }
+        // &__nav {
+        //     margin: 0;
+        // }
 
-        &__title {
-            display: none;
-        }
+        // &__title {
+        //     display: none;
+        // }
     }
 
 }
